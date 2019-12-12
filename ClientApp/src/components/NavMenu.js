@@ -25,6 +25,7 @@ export class NavMenu extends Component {
       <header>
         <div className="navBar">
           <Link to="/">Home</Link>
+          <Link className="loginLink" to="/login">Login</Link>
         </div>
       </header>
     );

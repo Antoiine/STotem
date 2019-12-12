@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Home.css'
 export class Home extends Component {
   static displayName = Home.name;
@@ -7,16 +8,16 @@ export class Home extends Component {
     return (
       <div className="homeContainer">
         <div className="playDiv">
-          <span>Play</span>
+          <Link to="/game">Play</Link>
         </div>
         <div className="rulesDiv">
-          <span>Rules</span>
+        <Link to="/rules">Rules</Link>
         </div>
         <div className="rankDiv">
-          <span>Rankings</span>
+        <Link to="/ranks">Rankings</Link>
         </div>
         <div className="paramDiv">
-          <span>Parameters</span>
+          <Link to="/params">Parameters</Link>
         </div>        
       </div>
     );

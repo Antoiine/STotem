@@ -4,17 +4,23 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 15px;
+  z-index: 99;
 }
 
 .navBar a {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: black;
 }
 
 .navBar a:hover {
   text-decoration: none;
+}
+
+.loginLink {
+  grid-column-start: 7;
+  text-align: right;
 }
 
